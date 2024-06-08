@@ -243,39 +243,51 @@ const Admin = () => {
   );
 };
 
-const MainApp = () => {
+const Navigation = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/perks" element={<Perks />} />
-        <Route path="/wallet" element={<Wallet />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/settings" element={<Settings />} />
-        <Route path="/admin" element={<Admin />} />
-      </Routes>
-      <Box position="fixed" bottom="0" width="100%" bg="white" p={4} shadow="md">
-        <HStack justifyContent="space-around">
-          <Link to="/home">
-            <IconButton aria-label="Home" icon={<FaHome />} />
-          </Link>
-          <Link to="/perks">
-            <IconButton aria-label="Perks" icon={<FaGift />} />
-          </Link>
-          <Link to="/wallet">
-            <IconButton aria-label="Wallet" icon={<FaWallet />} />
-          </Link>
-          <Link to="/profile">
-            <IconButton aria-label="Profile" icon={<FaUser />} />
-          </Link>
-          <Link to="/settings">
-            <IconButton aria-label="Settings" icon={<FaCog />} />
-          </Link>
-        </HStack>
-      </Box>
-    </Router>
+    <Box position="fixed" bottom="0" width="100%" bg="white" p={4} shadow="md">
+      <HStack justifyContent="space-around">
+        <Link to="/home">
+          <IconButton aria-label="Home" icon={<FaHome />} />
+        </Link>
+        <Link to="/perks">
+          <IconButton aria-label="Perks" icon={<FaGift />} />
+        </Link>
+        <Link to="/wallet">
+          <IconButton aria-label="Wallet" icon={<FaWallet />} />
+        </Link>
+        <Link to="/profile">
+          <IconButton aria-label="Profile" icon={<FaUser />} />
+        </Link>
+        <Link to="/settings">
+          <IconButton aria-label="Settings" icon={<FaCog />} />
+        </Link>
+      </HStack>
+    </Box>
   );
 };
 
-export default MainApp;
+const MainApp = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/perks" element={<Perks />} />
+      <Route path="/wallet" element={<Wallet />} />
+      <Route path="/profile" element={<Profile />} />
+      <Route path="/settings" element={<Settings />} />
+      <Route path="/admin" element={<Admin />} />
+    </Routes>
+  );
+};
+
+const AppWrapper = () => {
+  return (
+    <>
+      <MainApp />
+      <Navigation />
+    </>
+  );
+};
+
+export default AppWrapper;

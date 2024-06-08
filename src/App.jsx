@@ -1,8 +1,12 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainApp from "./pages/Index.jsx";
 
 function App() {
-  return <MainApp />;
+  return (
+    <Router>
+      <MainApp />
+    </Router>
+  );
 }
 
 export default App;
