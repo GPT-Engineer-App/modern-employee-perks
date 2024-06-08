@@ -1,14 +1,8 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import Login from "./pages/Index.jsx";
+import MainApp from "./pages/Index.jsx";
 
 function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route exact path="/" element={<Login />} />
-      </Routes>
-    </Router>
-  );
+  return <MainApp />;
 }
 
 export default App;
