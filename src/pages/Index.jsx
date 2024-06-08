@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import { Container, Box, VStack, Text, Input, Button, IconButton, HStack, Image, useColorMode, useColorModeValue, FormControl, FormLabel, Switch, Avatar, Tabs, TabList, TabPanels, Tab, TabPanel, Progress, CircularProgress, CircularProgressLabel, Flex, Spacer, Grid, GridItem, useDisclosure, Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, Menu, MenuButton, MenuList, MenuItem, MenuDivider, Icon } from "@chakra-ui/react";
+import { Container, Box, VStack, Text, Input, Button, IconButton, HStack, Image, useColorMode, useColorModeValue, FormControl, FormLabel, Switch, Avatar, Tabs, TabList, TabPanels, Tab, TabPanel, Progress, CircularProgress, CircularProgressLabel, Flex, Spacer, Grid, GridItem, useDisclosure, Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, Menu, MenuButton, MenuList, MenuItem, MenuDivider, Icon, extendTheme, ChakraProvider } from "@chakra-ui/react";
 import { FaGoogle, FaLinkedin, FaSun, FaMoon, FaWallet, FaHome, FaGift, FaBell, FaUser, FaCog, FaSignOutAlt, FaPlus, FaChartPie, FaChartLine, FaChartBar } from "react-icons/fa";
 
 const Login = () => {
@@ -13,10 +13,10 @@ const Login = () => {
           </Text>
           <Input placeholder="Email" />
           <Input placeholder="Password" type="password" />
-          <Button colorScheme="teal" width="100%">
+          <Button colorScheme="primary" width="100%">
             Login
           </Button>
-          <Button variant="outline" colorScheme="teal" width="100%">
+          <Button variant="outline" colorScheme="primary" width="100%">
             Sign Up
           </Button>
           <HStack spacing={4}>
@@ -32,7 +32,7 @@ const Login = () => {
 
 const Home = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const bg = useColorModeValue("gray.100", "gray.900");
+  const bg = useColorModeValue("gray.100", "dark.900");
   const color = useColorModeValue("black", "white");
 
   return (
@@ -57,9 +57,9 @@ const Home = () => {
           </VStack>
         </Box>
         <HStack spacing={4}>
-          <Button colorScheme="blue">Action 1</Button>
-          <Button colorScheme="green">Action 2</Button>
-          <Button colorScheme="orange">Action 3</Button>
+          <Button colorScheme="primary">Action 1</Button>
+          <Button colorScheme="primary">Action 2</Button>
+          <Button colorScheme="accent">Action 3</Button>
         </HStack>
         <Box bg="white" p={4} rounded="md" shadow="md" width="100%">
           <Text fontSize="2xl" fontWeight="bold">
@@ -77,7 +77,7 @@ const Home = () => {
             </Box>
           </HStack>
         </Box>
-        <Button onClick={toggleColorMode}>{colorMode === "light" ? <FaMoon /> : <FaSun />}</Button>
+        <Button onClick={toggleColorMode}>{colorMode === "light" ? <FaMoon /> : <FaSun />} Toggle Dark Mode</Button>
       </VStack>
     </Container>
   );
@@ -144,7 +144,7 @@ const Wallet = () => {
             <CircularProgressLabel>$600</CircularProgressLabel>
           </CircularProgress>
         </Box>
-        <Button colorScheme="teal" leftIcon={<FaPlus />}>
+        <Button colorScheme="primary" leftIcon={<FaPlus />}>
           Add Funds
         </Button>
         <Box bg="white" p={4} rounded="md" shadow="md" width="100%">
@@ -174,7 +174,7 @@ const Profile = () => {
           <Text>Email: john.doe@example.com</Text>
           <Text>Phone: (123) 456-7890</Text>
         </Box>
-        <Button colorScheme="teal">Edit Profile</Button>
+        <Button colorScheme="primary">Edit Profile</Button>
       </VStack>
     </Container>
   );
