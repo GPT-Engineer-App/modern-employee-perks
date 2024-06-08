@@ -243,7 +243,7 @@ const Admin = () => {
   );
 };
 
-const App = () => {
+const MainApp = () => {
   return (
     <Router>
       <Routes>
@@ -278,4 +278,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default MainApp;
