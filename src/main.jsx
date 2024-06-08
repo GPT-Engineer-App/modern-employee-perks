@@ -10,19 +10,19 @@ const colors = {
     700: "#2a69ac",
   },
   accent: {
-    500: "#ff4081",
-    400: "#ff79b0",
+    500: "#ff9900",
+    400: "#ffb84d",
   },
   dark: {
-    900: "#121212",
-    800: "#1e1e1e",
-    700: "#2e2e2e",
+    900: "#232f3e",
+    800: "#37475a",
+    700: "#485769",
   },
 };
 
 const fonts = {
-  heading: "Arial, sans-serif",
-  body: "Verdana, sans-serif",
+  heading: "Amazon Ember, Arial, sans-serif",
+  body: "Amazon Ember, Verdana, sans-serif",
 };
 
 const theme = extendTheme({ colors, fonts });

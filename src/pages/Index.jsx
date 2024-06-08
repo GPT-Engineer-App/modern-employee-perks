@@ -6,8 +6,8 @@ import DataAnalytics from "./DataAnalytics.jsx";
 
 const Login = () => {
   return (
-    <Container centerContent maxW="container.sm" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" bgGradient="linear(to-r, teal.500, green.500)">
-      <Box bg="white" p={8} rounded="md" shadow="md" width="100%">
+    <Container centerContent maxW="container.sm" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center" bgGradient="linear(to-r, #ff9900, #ffb84d)">
+      <Box bg="white" p={8} rounded="md" shadow="md" width="100%" bg="dark.900">
         <VStack spacing={4}>
           <Text fontSize="2xl" fontWeight="bold">
             Login
@@ -39,7 +39,7 @@ const Home = () => {
   return (
     <Container maxW="container.xl" p={4} bg={bg} color={color}>
       <VStack spacing={4}>
-        <Box bg="white" p={4} rounded="md" shadow="md" width="100%">
+        <Box bg="white" p={4} rounded="md" shadow="md" width="100%" bg="dark.900">
           <Text fontSize="2xl" fontWeight="bold">
             Balance Overview
           </Text>
@@ -47,7 +47,7 @@ const Home = () => {
             $1,234.56
           </Text>
         </Box>
-        <Box bg="white" p={4} rounded="md" shadow="md" width="100%">
+        <Box bg="white" p={4} rounded="md" shadow="md" width="100%" bg="dark.900">
           <Text fontSize="2xl" fontWeight="bold">
             Recent Transactions
           </Text>
@@ -62,7 +62,7 @@ const Home = () => {
           <Button colorScheme="primary">Action 2</Button>
           <Button colorScheme="accent">Action 3</Button>
         </HStack>
-        <Box bg="white" p={4} rounded="md" shadow="md" width="100%">
+        <Box bg="white" p={4} rounded="md" shadow="md" width="100%" bg="dark.900">
           <Text fontSize="2xl" fontWeight="bold">
             Featured Perks
           </Text>
@@ -137,7 +137,7 @@ const Wallet = () => {
   return (
     <Container maxW="container.xl" p={4}>
       <VStack spacing={4}>
-        <Box bg="white" p={4} rounded="md" shadow="md" width="100%">
+        <Box bg="white" p={4} rounded="md" shadow="md" width="100%" bg="dark.900">
           <Text fontSize="2xl" fontWeight="bold">
             Wallet Balance
           </Text>
@@ -148,7 +148,7 @@ const Wallet = () => {
         <Button colorScheme="primary" leftIcon={<FaPlus />}>
           Add Funds
         </Button>
-        <Box bg="white" p={4} rounded="md" shadow="md" width="100%">
+        <Box bg="white" p={4} rounded="md" shadow="md" width="100%" bg="dark.900">
           <Text fontSize="2xl" fontWeight="bold">
             Transaction History
           </Text>
@@ -168,7 +168,7 @@ const Profile = () => {
     <Container maxW="container.xl" p={4}>
       <VStack spacing={4}>
         <Avatar size="xl" name="John Doe" src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxlbXBsb3llZSUyMHBvcnRyYWl0fGVufDB8fHx8MTcxNzgyNDcwMnww&ixlib=rb-4.0.3&q=80&w=1080" />
-        <Box bg="white" p={4} rounded="md" shadow="md" width="100%">
+        <Box bg="white" p={4} rounded="md" shadow="md" width="100%" bg="dark.900">
           <Text fontSize="2xl" fontWeight="bold">
             John Doe
           </Text>
@@ -185,7 +185,7 @@ const Settings = () => {
   return (
     <Container maxW="container.xl" p={4}>
       <VStack spacing={4}>
-        <Box bg="white" p={4} rounded="md" shadow="md" width="100%">
+        <Box bg="white" p={4} rounded="md" shadow="md" width="100%" bg="dark.900">
           <Text fontSize="2xl" fontWeight="bold">
             Settings
           </Text>
@@ -211,7 +211,7 @@ const Admin = () => {
   return (
     <Container maxW="container.xl" p={4}>
       <VStack spacing={4}>
-        <Box bg="white" p={4} rounded="md" shadow="md" width="100%">
+        <Box bg="white" p={4} rounded="md" shadow="md" width="100%" bg="dark.900">
           <Text fontSize="2xl" fontWeight="bold">
             Admin Dashboard
           </Text>
@@ -221,19 +221,19 @@ const Admin = () => {
             <GridItem w="100%" h="10" bg="orange.500" />
           </Grid>
         </Box>
-        <Box bg="white" p={4} rounded="md" shadow="md" width="100%">
+        <Box bg="white" p={4} rounded="md" shadow="md" width="100%" bg="dark.900">
           <Text fontSize="2xl" fontWeight="bold">
             Employee Management
           </Text>
           <Text>Table with filter options and action buttons</Text>
         </Box>
-        <Box bg="white" p={4} rounded="md" shadow="md" width="100%">
+        <Box bg="white" p={4} rounded="md" shadow="md" width="100%" bg="dark.900">
           <Text fontSize="2xl" fontWeight="bold">
             Perk Management
           </Text>
           <Text>Modern forms with drag-and-drop functionality</Text>
         </Box>
-        <Box bg="white" p={4} rounded="md" shadow="md" width="100%">
+        <Box bg="white" p={4} rounded="md" shadow="md" width="100%" bg="dark.900">
           <Text fontSize="2xl" fontWeight="bold">
             Reports
           </Text>
