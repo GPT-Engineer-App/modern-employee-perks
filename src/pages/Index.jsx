@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { Container, Box, VStack, Text, Input, Button, IconButton, HStack, Image, useColorMode, useColorModeValue, FormControl, FormLabel, Switch, Avatar, Tabs, TabList, TabPanels, Tab, TabPanel, Progress, CircularProgress, CircularProgressLabel, Flex, Spacer, Grid, GridItem, useDisclosure, Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerOverlay, DrawerContent, DrawerCloseButton, Menu, MenuButton, MenuList, MenuItem, MenuDivider, Icon, extendTheme, ChakraProvider } from "@chakra-ui/react";
 import { FaGoogle, FaLinkedin, FaSun, FaMoon, FaWallet, FaHome, FaGift, FaBell, FaUser, FaCog, FaSignOutAlt, FaPlus, FaChartPie, FaChartLine, FaChartBar } from "react-icons/fa";
+import DataAnalytics from "./DataAnalytics.jsx";
 
 const Login = () => {
   return (
@@ -259,6 +260,9 @@ const Navigation = () => {
         <Link to="/profile">
           <IconButton aria-label="Profile" icon={<FaUser />} />
         </Link>
+        <Link to="/data-analytics">
+          <IconButton aria-label="Data Analytics" icon={<FaChartPie />} />
+        </Link>
         <Link to="/settings">
           <IconButton aria-label="Settings" icon={<FaCog />} />
         </Link>
@@ -277,6 +281,7 @@ const MainApp = () => {
       <Route path="/profile" element={<Profile />} />
       <Route path="/settings" element={<Settings />} />
       <Route path="/admin" element={<Admin />} />
+      <Route path="/data-analytics" element={<DataAnalytics />} />
     </Routes>
   );
 };
